@@ -1,12 +1,12 @@
 #include "FamilyTree.hpp"
-
+//kust checking
 
 
 using namespace family;
 
 //Node
 
-     string findMyRelation(int level,string sex)
+   string findMyRelation(int level,string sex)
     {
       if (level == 0)
       {
