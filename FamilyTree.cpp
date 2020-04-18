@@ -6,7 +6,7 @@ using namespace family;
 
 //Node
 
-   string findMyRelation(int level,string sex)
+     string findMyRelation(int level,string sex)
     {
       if (level == 0)
       {
@@ -14,7 +14,21 @@ using namespace family;
       }
       else if(level == 1)
       {
-
+          return sex;
+      }
+      else if (level == 2)
+      {
+        return "grand" + sex;
+      }
+      else
+      {
+        string relation = "grand" + sex;
+        for (int i = 3; i <= level; i++)
+        {
+            string temp = relation;
+            relation ="great-" + temp;
+        }
+       return relation;
       }
     }
 
