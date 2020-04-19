@@ -14,7 +14,7 @@ public:
 
     //consructor and functions
 
-    Node(string name, int level) : name(name), relation("Just me"), level(level), mother(NULL), father(NULL){};
+    Node(string name, int level) : name(name), relation("me"), level(level), mother(NULL), father(NULL){};
 
     string findMyRelation(int level, string sex);
 };

@@ -75,7 +75,7 @@ string Tree::relation(string name)
   Node *found = findPerson(root, name);
   if (found == NULL)
   {
-    throw std::runtime_error(name + " does not exist");
+    return "unrelated";
   }
   else
   {
@@ -88,7 +88,7 @@ string Tree::find(string relation)
   Node *found = findReletive(root, relation);
   if (found == NULL)
   {
-    throw std::runtime_error(relation + " does not exist in this tree");
+    throw std::runtime_error(relation + " does not exist");
   }
   else
   {
